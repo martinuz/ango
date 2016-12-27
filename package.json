@@ -1,23 +1,18 @@
 {
   "name": "ango",
-  "version": "1.0.0",
-  "description": "DemoApp for Angular2 & NodeJS",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/martinuz/ango.git"
-  },
-  "keywords": [
-    "angular2",
-    "nodejs"
-  ],
-  "author": "Antosik Jakub & Gołubienko Marcin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/martinuz/ango/issues"
-  },
-  "homepage": "https://github.com/martinuz/ango#readme"
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "less-middleware": "~2.2.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  }
 }

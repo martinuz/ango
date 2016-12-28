@@ -12,7 +12,7 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var forms_1 = require("@angular/forms");
 var platform_browser_1 = require("@angular/platform-browser");
-var homeComponent_component_1 = require("./homeComponent/homeComponent.component");
+var test_1 = require("./test/components/test");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,11 +26,11 @@ AppModule = __decorate([
             http_1.HttpModule,
         ],
         declarations: [
-            homeComponent_component_1.HomeComponent
+            test_1.Test
         ],
         providers: [],
         bootstrap: [
-            homeComponent_component_1.HomeComponent
+            test_1.Test
         ],
     }),
     __metadata("design:paramtypes", [])

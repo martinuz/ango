@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule, FormBuilder } from '@angular/forms';
 import { BrowserModule  } from '@angular/platform-browser';
-import {HomeComponent} from './homeComponent/homeComponent.component'
+import {Test} from './test/components/test'
 @NgModule({
     imports: [
       BrowserModule,
@@ -10,12 +10,12 @@ import {HomeComponent} from './homeComponent/homeComponent.component'
       HttpModule,
     ],
    declarations: [
-      HomeComponent
+      Test
     ],
     providers: [
     ],
     bootstrap: [
-      HomeComponent
+      Test
     ],
 })
 export class AppModule {}

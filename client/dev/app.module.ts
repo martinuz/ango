@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule, FormBuilder } from '@angular/forms';
 import { BrowserModule  } from '@angular/platform-browser';
-import { TodoCmp }   from './todo/components/todo-cmp';
-import { TodoService }   from './todo/services/todo-service';
-
+import {HomeComponent} from './homeComponent/homeComponent.component'
 @NgModule({
     imports: [
       BrowserModule,
@@ -12,13 +10,12 @@ import { TodoService }   from './todo/services/todo-service';
       HttpModule,
     ],
    declarations: [
-      TodoCmp,
+      HomeComponent
     ],
     providers: [
-      TodoService,
     ],
     bootstrap: [
-      TodoCmp,
+      HomeComponent
     ],
 })
 export class AppModule {}

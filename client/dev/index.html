@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="shortcut icon" type="image/ico" href="favicon.png" />
+    <style>
+      /* avoid eye burns in development */
+      body {
+        background-color: #aaa;
+      }
+    </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
     <title>ng2do</title>
@@ -17,12 +23,12 @@
   </head>
   <body>
 
-    <test></test>
+    <app-component>
+    </app-component>
+
     <script>
       System.import("./index.js");
     </script>
-
-
 
   </body>
 </html>

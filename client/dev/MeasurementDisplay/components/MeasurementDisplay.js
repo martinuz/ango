@@ -9,18 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var Test = (function () {
-    function Test() {
-        this.name = "yo, I'm your component :D";
+var Measurement_1 = require("../../model/Measurement");
+var MeasurementDisplay = (function () {
+    function MeasurementDisplay() {
     }
-    return Test;
+    return MeasurementDisplay;
 }());
-Test = __decorate([
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Measurement_1.Measurement)
+], MeasurementDisplay.prototype, "value", void 0);
+MeasurementDisplay = __decorate([
     core_1.Component({
-        selector: 'test',
-        templateUrl: 'test/templates/test.html',
-        styleUrls: ['test/styles/test.css']
+        selector: 'measurement-display',
+        templateUrl: 'MeasurementDisplay/templates/MeasurementDisplay.html',
+        styleUrls: ['MeasurementDisplay/styles/MeasurementDisplay.css']
     }),
     __metadata("design:paramtypes", [])
-], Test);
-exports.Test = Test;
+], MeasurementDisplay);
+exports.MeasurementDisplay = MeasurementDisplay;

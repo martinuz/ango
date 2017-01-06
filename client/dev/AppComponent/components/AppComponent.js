@@ -9,32 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-var forms_1 = require("@angular/forms");
-var platform_browser_1 = require("@angular/platform-browser");
-var AppComponent_1 = require("./AppComponent/components/AppComponent");
-var MeasurementDisplay_1 = require("./MeasurementDisplay/components/MeasurementDisplay");
-var AppModule = (function () {
-    function AppModule() {
+var Measurement_1 = require("../../model/Measurement");
+var AppComponent = (function () {
+    function AppComponent() {
+        this.name = "yo, I'm your component :D";
+        this.bloodMeasurement = new Measurement_1.Measurement();
     }
-    return AppModule;
+    return AppComponent;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule,
-            http_1.HttpModule,
-        ],
-        declarations: [
-            AppComponent_1.AppComponent,
-            MeasurementDisplay_1.MeasurementDisplay
-        ],
-        providers: [],
-        bootstrap: [
-            AppComponent_1.AppComponent
-        ],
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'app-component',
+        templateUrl: 'AppComponent/templates/AppComponent.html',
+        styleUrls: ['AppComponent/styles/AppComponent.css']
     }),
     __metadata("design:paramtypes", [])
-], AppModule);
-exports.AppModule = AppModule;
+], AppComponent);
+exports.AppComponent = AppComponent;

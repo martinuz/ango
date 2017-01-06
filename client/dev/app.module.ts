@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-import { FormsModule, FormBuilder } from '@angular/forms';
-import { BrowserModule  } from '@angular/platform-browser';
-import {Test} from './test/components/test'
+import {NgModule} from '@angular/core';
+import {HttpModule} from '@angular/http';
+import {FormsModule, FormBuilder} from '@angular/forms';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppComponent} from './AppComponent/components/AppComponent';
+import {MeasurementDisplay} from "./MeasurementDisplay/components/MeasurementDisplay";
+
 @NgModule({
     imports: [
       BrowserModule,
@@ -10,12 +12,13 @@ import {Test} from './test/components/test'
       HttpModule,
     ],
    declarations: [
-      Test
+      AppComponent,
+      MeasurementDisplay
     ],
     providers: [
     ],
     bootstrap: [
-      Test
+      AppComponent
     ],
 })
 export class AppModule {}

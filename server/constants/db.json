@@ -1,3 +1,4 @@
 {
-  "localhost": "mongodb://localhost/ango"
+  "localhost": "mongodb://localhost/ango",
+  "dockermachine": "mongodb://192.168.99.100/ango"
 }

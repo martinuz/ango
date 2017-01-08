@@ -1,0 +1,17 @@
+.measurement-display-name {
+
+}
+
+.measurement-display-type {
+
+}
+
+.measurement-display-value {
+  font-size: 3em;
+  color: #222;
+}
+
+.measurement-display-unit {
+  font-size: 2em;
+  color: #222;
+}

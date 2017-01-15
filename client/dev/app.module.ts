@@ -4,6 +4,7 @@ import {FormsModule, FormBuilder} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './AppComponent/components/AppComponent';
 import {MeasurementDisplay} from "./MeasurementDisplay/components/MeasurementDisplay";
+import {MeasurementSet} from "./MeasurementSet/components/MeasurementSet";
 
 @NgModule({
     imports: [
@@ -13,7 +14,8 @@ import {MeasurementDisplay} from "./MeasurementDisplay/components/MeasurementDis
     ],
    declarations: [
       AppComponent,
-      MeasurementDisplay
+      MeasurementDisplay,
+      MeasurementSet
     ],
     providers: [
     ],

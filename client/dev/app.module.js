@@ -14,6 +14,7 @@ var forms_1 = require("@angular/forms");
 var platform_browser_1 = require("@angular/platform-browser");
 var AppComponent_1 = require("./AppComponent/components/AppComponent");
 var MeasurementDisplay_1 = require("./MeasurementDisplay/components/MeasurementDisplay");
+var MeasurementSet_1 = require("./MeasurementSet/components/MeasurementSet");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,8 @@ AppModule = __decorate([
         ],
         declarations: [
             AppComponent_1.AppComponent,
-            MeasurementDisplay_1.MeasurementDisplay
+            MeasurementDisplay_1.MeasurementDisplay,
+            MeasurementSet_1.MeasurementSet
         ],
         providers: [],
         bootstrap: [

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Measurement} from "../../model/Measurement";
+import {MeasurementSet} from "../../MeasurementSet/components/MeasurementSet";
 
 @Component({
   selector: 'app-component',
@@ -8,5 +9,5 @@ import {Measurement} from "../../model/Measurement";
 })
 export class AppComponent {
   name: string = `yo, I'm your component :D`;
-  bloodMeasurement: Measurement = new Measurement();
+  measurementSet: MeasurementSet = new MeasurementSet();
 }

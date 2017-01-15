@@ -9,11 +9,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var Measurement_1 = require("../../model/Measurement");
+var MeasurementSet_1 = require("../../MeasurementSet/components/MeasurementSet");
 var AppComponent = (function () {
     function AppComponent() {
         this.name = "yo, I'm your component :D";
-        this.bloodMeasurement = new Measurement_1.Measurement();
+        this.measurementSet = new MeasurementSet_1.MeasurementSet();
     }
     return AppComponent;
 }());

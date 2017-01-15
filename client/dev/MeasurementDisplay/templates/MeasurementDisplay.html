@@ -1,4 +1,10 @@
-<span>Name: {{value.name}}</span>
-<span>Type: {{value.type}}</span>
-<span>Value: {{value.value}}</span>
-<span>Unit: {{value.unit}}</span>
+<span class="measurement-display-name">{{value.name}}</span>
+<span class="measurement-display-type">Type: {{value.type}}</span>
+<span class="measurement-display-value">
+  {{value.value}}
+</span>
+<span class="measurement-display-unit">{{value.unit}}</span>
+
+<span class="measurement-display-normal-range">
+  (Norm: {{value.normalValue.min}} - {{value.normalValue.max}} {{value.unit}})
+</span>
